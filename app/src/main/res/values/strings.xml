@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ግዮን</string>
+    <string name="home">መነሻ ገጽ</string>
+    <string name="product_list">ዝርዝር</string>
+    <string name="notification">ማስታወቂያዎች</string>
+    <string name="order">ትዛዝ</string>
+    <string name="account">አካዉንት</string>
+
+    <string name="home_txt">Welcome to Ethiopian food quality assurance and exchange platform.
+        You can access different services from Gion PLC using this app.\n\nif you want to see the list of
+        products we have, click the button below
+    </string>
+    <string name="product_list_txt">This is product ዝርዝር page</string>
+    <string name="notification_txt">This is notification/ ማስታወቂያዎች page</string>
+    <string name="order_txt">ትዛዝ goes here</string>
+    <string name="account_btn_txt">Edit</string>
+    <string name="product_catagory_txt">This is a list of products in a specific category</string>
+    <string name="no_account_txt">አካዉንት የሎትም?</string>
+    <string name="sign_up">ተመዝገብ</string>
+    <string name="login">ግባ</string>
+    <string name="name">ስም</string>
+    <string name="phone_number">ስልክ</string>
+    <string name="password">ፖስወርድ</string>
+    <string name="new_name">አደስ ስም</string>
+    <string name="new_phone">አደስ ስልክ</string>
+    <string name="edit_btn_txt">ቀይር</string>
+    <string name="logout">ውጣ</string>
+    <string name="discard">ይቅር</string>
+    <string name="save">ይሁን</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">search</string>
+</resources>

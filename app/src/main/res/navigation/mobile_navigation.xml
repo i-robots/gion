@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@+id/splash_dest">
+    <fragment
+            android:id="@+id/home_dest"
+            android:name="com.example.gion.HomeFragment"
+            tools:layout="@layout/fragment_home">
+        <action
+                app:destination="@id/productList_dest"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                android:id="@+id/list_action"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/productList_dest"
+            android:name="com.example.gion.ProductListFragment">
+        <argument
+                android:name="itemCategory"
+                app:argType="integer"
+                android:defaultValue="0"/>
+
+        <action android:id="@+id/item_action"
+                app:destination="@+id/itemsList_dest"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/account_dest"
+            android:name="com.example.gion.AccountFragment"
+            tools:layout="@layout/fragment_account"
+    />
+
+    <fragment
+            android:id="@+id/order_dest"
+            android:name="com.example.gion.OrderFragment"
+            tools:layout="@layout/fragment_order"
+    />
+
+    <fragment android:id="@+id/notification_dest"
+              android:name="com.example.gion.NotificactionFragment"
+              tools:layout="@layout/fragment_notificaction"
+    />
+
+    <fragment android:id="@+id/login_dest"
+              android:name="com.example.gion.LoginFragment"
+              tools:layout="@layout/fragment_login">
+        <action android:id="@+id/signup_action"
+                app:destination="@id/register_dest"/>
+        <action app:destination="@id/account_dest"
+                android:id="@+id/account_action"/>
+    </fragment>
+
+    <fragment android:id="@+id/register_dest"
+              android:name="com.example.gion.registerFragment"
+              tools:layout="@layout/fragment_register"
+    />
+
+    <fragment android:id="@+id/splash_dest"
+              android:name="com.example.gion.SplashScreenFragment"
+              tools:layout="@layout/splash_screen"
+    />
+    <fragment android:id="@+id/itemDetail_dest" android:name="com.example.gion.ItemDetailFragment"
+              tools:layout="@layout/fragment_item_detail"/>
+    <fragment android:id="@+id/itemsList_dest" android:name="com.example.gion.ItemsListFragment"
+    >
+        <action android:id="@+id/detail_action" app:destination="@id/itemDetail_dest"/>
+    </fragment>
+
+</navigation>
+

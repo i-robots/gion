@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/primary">
+        <item
+                android:id="@id/home_dest"
+                android:icon="@drawable/ic_home"
+                android:title="@string/home" />
+        <item
+                android:id="@id/productList_dest"
+                android:icon="@drawable/ic_cart"
+                android:title="@string/product_list" />
+        <item
+                android:id="@id/order_dest"
+                android:icon="@drawable/ic_empty_shopping_cart"
+                android:title="@string/order" />
+        <item
+                android:id="@id/notification_dest"
+                android:icon="@drawable/ic_help"
+                android:title="@string/notification" />
+    </group>
+    <item
+            android:id="@id/login_dest"
+            android:icon="@drawable/ic_user_active"
+            android:title="@string/account" />
+</menu>
